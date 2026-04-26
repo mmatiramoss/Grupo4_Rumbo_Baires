@@ -19,8 +19,107 @@ nav a {
     color: inherit;
 }
 
-img {
+.Foro {
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.foro-imagen {
+    width: 20%;
+    min-width: 160px;
+    background-color: transparent;
+}       
+
+.foro-imagen img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    image-rendering: auto;
+    mix-blend-mode: multiply;
+    filter: contrast(1.04) saturate(1.02) brightness(1.01);
+}
+
+.foro-contenido {
+    width: 76%;
+    text-align: right;
+}
+
+.boton-foro {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+
+
+
+
+.bloque-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    margin-bottom: 20px;
+}
+
+.bloque-info-reversa {
+    flex-direction: row-reverse;
+    background-color:rgb(244, 244, 244);;
+}
+
+.foto-contenedor {
     width: 50%;
+}
+
+.foto-contenedor img {
+    width: 100%;
+    display: block;
+}
+.bloque-info p {
+    width: 49%;
+    margin: 0;
+    text-align: left;
+}
+
+.bloque-info-reversa p {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .bloque-info,
+    .bloque-info-reversa {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .foto-contenedor,
+    .bloque-info p {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .Foro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foro-imagen,
+    .foro-contenido {
+        width: 100%;
+    }
+
+    .foro-contenido {
+        text-align: left;
+    }
 }
 
 footer {
@@ -29,6 +128,6 @@ footer {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 20px 30px;
+    padding: 20px 50px;
 }
 

@@ -4,7 +4,7 @@
     p{color: rgb(0, 0, 0); font-size: 15px;font-family: Arial}
     li{color: rgb(0, 0, 0); font-size: 20px;}
     body{ background-color: rgb(244, 244, 244); margin: 0; padding: 0;}
-    header{background-color: rgb(212, 204, 193);opacity: 0.7; margin: 40px; border: solid 15px;padding: 10px;}
+    header{background-color: white; margin: 40px; border: solid 15px;padding: 10px;}
     nav {width: 100%; margin: 0; padding: 0;}
     footer {
     background-color: white;
