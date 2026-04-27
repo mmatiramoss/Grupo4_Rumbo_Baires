@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+/* SECCIÓN NOSOTROS */
+.nosotros-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo-principal {
+    text-align: center;
+    font-size: 48px;
+    color: rgb(36, 56, 78);
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* CONTENEDOR DE EQUIPO - GRID */
+.equipo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TARJETA DE EQUIPO */
+.tarjeta-equipo {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.tarjeta-equipo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* FOTO DE PERFIL */
+.foto-perfil {
+    margin-bottom: 20px;
+}
+
+.foto-perfil img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(36, 56, 78);
+}
+
+/* NOMBRE PERSONA */
+.nombre-persona {
+    font-size: 22px;
+    color: rgb(36, 56, 78);
+    margin: 15px 0 5px 0;
+    font-weight: 700;
+}
+
+/* PUESTO PERSONA */
+.puesto-persona {
+    font-size: 15px;
+    color: rgb(100, 120, 140);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* LOGO UNIVERSIDAD */
+.logo-universidad {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logo-universidad img {
+    height: 35px;
+    width: auto;
+}
+
+.logo-universidad-text {
+    font-size: 13px;
+    color: rgb(70, 70, 70);
+    font-weight: 600;
+}
+
+/* DESCRIPCIÓN PERSONA */
+.descripcion-persona {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+/* RESPONSIVE - TABLET */
+@media (max-width: 1024px) {
+    .equipo-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    .titulo-principal {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+/* RESPONSIVE - MÓVIL */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 30px 15px;
+    }
+    
+    .equipo-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .titulo-principal {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .tarjeta-equipo {
+        padding: 15px;
+    }
+    
+    .foto-perfil img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .nombre-persona {
+        font-size: 18px;
+    }
+    
+    .puesto-persona {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipo-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .titulo-principal {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .main-content {
+        padding: 20px 10px;
+    }
+}
